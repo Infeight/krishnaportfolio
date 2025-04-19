@@ -1,0 +1,310 @@
+.skills{
+    margin-top: 5vh;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+   justify-content: space-evenly;
+}
+
+.head{
+    font-family: 'Inter';
+    font-size: 6vw;
+    box-sizing: border-box;
+    position: relative;
+    left: 30vw;
+    transition-duration:1s;
+    width: 25vw;
+    display: flex;
+    justify-content: flex-start;
+    /* padding-left: 5px; */
+}
+
+.head:hover{
+   
+        background: linear-gradient(90deg, #e65c00, #F9D423);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition-duration: 0.5s;
+    
+    
+}
+
+.skillcont{
+    width: 30vw;
+    height: 90%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   align-items: start;
+   opacity: 15%;
+   transition-duration: 0.5s;
+
+}
+
+#logoscont{
+    opacity: 1;
+}
+
+.skillimg{
+    width: 35vw;
+    border-radius: 10px;
+}
+.skillimg img{
+    width: 100%;
+}
+
+.skill{
+    
+    color: #061256;
+    width: fit-content;
+    height: auto;
+    border-radius: 10px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 1.3vw;
+    font-family: 'Inter';
+    box-shadow: none;
+    transition-duration: 0.3s;
+
+  
+}
+
+.skill:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.3s;
+
+}
+
+.logossep{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+}
+
+.logobox{
+    width: 5vw;
+    height: 5vw;
+    margin: 1vw;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: none;
+    transition-duration: 0.2s;
+}
+.logobox:hover{
+    box-shadow: none;
+    transition-duration: 0.2s;
+
+}
+
+.logobox img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 300px) {
+    @media screen and (max-width: 600px) {
+        .skills{
+            flex-direction: column;
+        }
+        .skillcont{
+            width: 90%;
+          align-items: initial;
+        }
+        .skillimg img{
+            animation-name: rotateimg;
+            animation-direction: linear;
+            animation-timeline: view();
+            animation-range: entry 0 cover 85%;
+        }
+        .logobox{
+            width: 12vw;
+            height: 12vw;
+            animation-name: shadows;
+            animation-direction: linear;
+            animation-timeline: view();
+            animation-range: entry 0 cover 85%;
+        }
+        .head{
+            font-size: 10vw;
+            left: 55vw;
+            width: fit-content;
+            animation-name: moveleft;
+            animation-direction: linear;
+            animation-timeline: view();
+            animation-range: entry 0 cover 100%;
+        }
+        .skill{
+            width: 100%;
+            font-size: 3.2vw;
+            
+        }
+        #skillcont{
+            animation-name: appearleft;
+            animation-direction: linear;
+            animation-timeline: view();
+            animation-range: entry 0 cover 60%;
+        }
+
+        @keyframes rotateimg {
+            0%{
+                transform: rotateZ(0deg);
+            }
+
+            100%{
+                transform: rotateZ(90deg);
+            }
+
+        }
+       
+        @keyframes appearleft {
+            0%{
+                opacity: 0;
+                transition-duration: 0.5s;
+               
+            }
+            100%{
+                opacity: 1;
+                scale: 1;
+                transition-duration: 0.5s;
+
+            }
+        }
+        @keyframes shadows {
+            0%{
+                box-shadow: none;
+                transition-duration: 0.5s;
+
+            }
+            100%{
+                box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+                transition-duration: 0.5s;
+
+            }
+        }
+        @keyframes moveleft {
+            0%{
+                left: 55vw;
+            }
+            100%{
+                left: 0;
+            }
+        }
+    }}
+
+    @media screen and (min-width: 601px) {
+        @media screen and (max-width: 1023px) {
+            .skills{
+                flex-direction: column;
+            }
+            .skillcont{
+                width: 90%;
+              align-items: initial;
+            }
+            .skillimg img{
+                animation-name: rotateimg;
+                animation-direction: linear;
+                animation-timeline: view();
+                animation-range: entry 0 cover 85%;
+            }
+            .logobox{
+                width: 8vw;
+                height: 8vw;
+                animation-name: shadows;
+                animation-direction: linear;
+                animation-timeline: view();
+                animation-range: entry 0 cover 85%;
+            }
+            .head{
+                font-size: 10vw;
+                left: 55vw;
+                width: fit-content;
+                animation-name: moveleft;
+                animation-direction: linear;
+                animation-timeline: view();
+                animation-range: entry 0 cover 100%;
+            }
+            .skill{
+                width: 100%;
+                font-size: 2.8vw;
+                
+            }
+            #skillcont{
+                animation-name: appearleft;
+                animation-direction: linear;
+                animation-timeline: view();
+                animation-range: entry 0 cover 60%;
+            }
+    
+            @keyframes rotateimg {
+                0%{
+                    transform: rotateZ(0deg);
+                }
+    
+                100%{
+                    transform: rotateZ(90deg);
+                }
+    
+            }
+           
+            @keyframes appearleft {
+                0%{
+                    opacity: 0;
+                    transition-duration: 0.5s;
+                   
+                }
+                100%{
+                    opacity: 1;
+                    scale: 1;
+                    transition-duration: 0.5s;
+    
+                }
+            }
+            @keyframes shadows {
+                0%{
+                    box-shadow: none;
+                    transition-duration: 0.5s;
+    
+                }
+                100%{
+                    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+                    transition-duration: 0.5s;
+    
+                }
+            }
+            @keyframes moveleft {
+                0%{
+                    left: 55vw;
+                }
+                100%{
+                    left: 0;
+                }
+            }
+        }}
+
+    @media screen and (min-width:1024px) {
+        @media screen and (max-width:1439px) {
+            .skills{
+                height: 92vh;
+                margin-top: 8vh;
+            }
+            .skillcont{
+                width: 35vw;
+            }
+            .skill{
+                font-size: 1.5vw;
+            }
+            .head{
+                left: 70vw;
+                box-sizing: border-box;
+                padding-left: 2vw;
+            }
+            #logoscont{
+                position: relative;
+                left: 1vw;
+            }
+        }}

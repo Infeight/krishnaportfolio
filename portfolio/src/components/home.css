@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #15AAFF, #ADF7F2);
+    background-size: 1000% 1000%;
+    animation: gradientMove 10s ease infinite;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.pichold {
+    width: 90vw;
+    height: 90vh;
+    position: relative;
+    top: 5vh;
+    left: 5vw;
+    border-radius: 10px;
+    background-color: #e1e1e145;
+    backdrop-filter: blur(47px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.picholdbox {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0 0 5px 0px #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.introcont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.name {
+    font-family: 'Inter';
+    font-size: 2.5vw;
+    font-weight: 700;
+    left: 30vw;
+    position: relative;
+    width: 20vw;
+    transition-duration: 1s;
+    color: rgb(0, 0, 62);
+}
+
+.box1 {
+    width: 25vw;
+    height: 90%;
+    transition-duration: 0.5s;
+    position: relative;
+    opacity: 15%;
+    border-radius: 10px;
+    word-wrap: break-word;
+    box-shadow: none;
+    /* top: -12%; */
+    color: rgb(0, 0, 62);
+    font-family: 'Inter';
+    font-size: 1.5vw;
+    font-weight: 200;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#desc {
+    top: -12%;
+}
+
+#heading {
+    font-size: 2.5vw;
+    font-weight: 300;
+    height: 45%;
+    position: relative;
+    opacity: 1;
+}
+
+.profilecontainer {
+    width: 25vw;
+    height: 25vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2 {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.box2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.endnote {
+    font-size: 2vw;
+    width: 80%;
+    margin: auto;
+    font-family: 'Inter';
+    text-align: center;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5vw;
+}
+
+.endnote iframe {
+    border: none;
+    outline: none;
+
+}
+
+.contacts {
+    width: 100vw;
+    height: 10vw;
+    font-size: 1.1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5vw;
+    font-family: 'Inter';
+    text-align: center;
+    font-weight: 400;
+    margin-top: 3vw;
+}
+
+.mobile {
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 300px) {
+    @media screen and (max-width: 600px) {
+        .pichold {
+            width: 95vw;
+            height: 95vh;
+            top: 2.5vh;
+            left: 2.5vw;
+        }
+
+        .picholdbox {
+            flex-direction: column;
+        }
+
+        .introcont {
+            justify-content: center;
+        }
+
+        .box1 {
+            width: 90%;
+        }
+
+        #heading {
+            font-size: 5vw;
+        }
+
+        .name {
+            left: 20vw;
+            font-size: 4.5vw;
+            width: fit-content;
+            top: 4vw;
+        }
+
+        .box2 {
+            width: 50vw;
+            height: 50vw;
+        }
+
+        #desc {
+            font-size: 3.5vw;
+            width: 100%;
+            height: 100%;
+            font-weight: 300;
+        }
+
+        .endnote {
+            font-size: 4vw;
+            margin-top: 15vw;
+        }
+
+        .endnote iframe {
+            width: 25%;
+        }
+
+        .contacts {
+            font-size: 3vw;
+            margin-top: 10vw;
+        }
+    }
+}
+
+@media screen and (min-width:1025px) {
+    @media screen and (max-width:1439px) {
+        .pichold {
+            width: 96vw;
+            height: 86vh;
+            top: 7vh;
+            left: 2vw;
+        }
+        #desc{
+            font-size: 1.7vw;
+            width: 30vw;
+        }
+
+        .endnote{
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (min-width: 601px) {
+    @media screen and (max-width: 1023px) {
+        .pichold{
+            width: 94vw;
+    height: 96vh;
+    top: 2vh;
+    left: 3vw;
+        }
+        .picholdbox{
+            flex-direction: column;
+        }
+        .introcont {
+            justify-content: center;
+        }
+
+        .box1 {
+            width: 80%;
+        }
+
+        #heading {
+            font-size: 3.5vw;
+        }
+
+        .name {
+            left: 20vw;
+            font-size: 3.5vw;
+            width: fit-content;
+            top: 4vw;
+        }
+
+        .box2 {
+            width: 45vw;
+            height: 45vw;
+        }
+
+        #desc {
+            font-size: 2.8vw;
+            width: 98%;
+            height: 100%;
+            font-weight: 300;
+        }
+
+        .endnote {
+            font-size: 3vw;
+            margin-top: 15vw;
+        }
+
+        .endnote iframe {
+            width: 25%;
+        }
+
+        .contacts {
+            font-size: 2.5vw;
+            margin-top: 10vw;
+        }
+    
+    }}
+
+    @media screen and(min-width:1024px) {
+        @media screen and(max-width: 1040px) {
+            @media screen and (min-height:1300px) {
+                .pichold{
+                    width: 94vw;
+            height: 96vh;
+            top: 2vh;
+            left: 3vw;
+                }
+                .picholdbox{
+                    flex-direction: column;
+                }
+                .introcont {
+                    justify-content: center;
+                }
+        
+                .box1 {
+                    width: 80%;
+                }
+        
+                #heading {
+                    font-size: 3.5vw;
+                }
+        
+                .name {
+                    left: 20vw;
+                    font-size: 3.5vw;
+                    width: fit-content;
+                    top: 4vw;
+                }
+        
+                .box2 {
+                    width: 45vw;
+                    height: 45vw;
+                }
+        
+                #desc {
+                    font-size: 2.8vw;
+                    width: 98%;
+                    height: 100%;
+                    font-weight: 300;
+                }
+        
+                .endnote {
+                    font-size: 3vw;
+                    margin-top: 15vw;
+                }
+        
+                .endnote iframe {
+                    width: 25%;
+                }
+        
+                .contacts {
+                    font-size: 2.5vw;
+                    margin-top: 10vw;
+                }
+            }}}

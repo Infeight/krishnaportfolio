@@ -1,0 +1,261 @@
+
+.works{
+width: 100vw;
+height: 100vh;
+margin-top: 5vh;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+.workscont{
+    width: 55%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.imgcont{
+    width: 40%;
+    height: auto;
+}
+.imgcont img{
+    width: 100%;
+    animation-name: showimg;
+    animation-direction: linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 160%;
+}
+.workshead{
+        width: 100%;
+        height: auto;
+        font-family: 'Inter';
+        font-size: 6vw;
+        font-weight: 300;
+        box-sizing: border-box;
+        padding: 10px;
+      color: rgb(0, 0, 62);
+      transition-duration: 0.5s;
+      animation: blink 1.5s infinite ease-in-out;
+ 
+}
+
+.workshead:hover{
+    background: linear-gradient(90deg, #e65c00, #F9D423);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition-duration: 0.5s;
+
+}
+
+
+.workdone{
+    width: 70%;
+    height: fit-content;
+    min-height: 6vw;
+    border-radius: 10px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 0.8vw;
+    transition-duration: 0.3s;
+}
+.workdone:hover{
+    font-size: 1.2vw;
+    transition-duration: 0.3s;
+
+}
+.workdone img{
+    width: 12%;
+    height: 5vw;
+    border-radius: 5px ;
+}
+
+.workdone p{
+    width: 80%;
+    height: auto;
+    word-wrap: break-word;
+ 
+    font-weight: 400;
+    font-family: 'Inter';
+
+
+    h6{
+        margin: 0;
+        font-size: 1vw;
+        font-family:'Inter';
+        font-weight: 500;
+    }
+}
+
+.explore{
+    font-size: 1.1vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Inter';
+    color: rgb(0, 0, 62);
+    cursor: pointer;
+}
+@keyframes showimg {
+    0%{
+       transform: rotatex(60deg);
+    }
+    100%{
+       transform: rotatex(0deg);
+    }
+  }
+
+  @keyframes blink {
+    0%{
+        color: rgb(0, 0, 62);
+        transition-duration: 1.2s;
+    }
+    100%{
+        background: linear-gradient(90deg, #e65c00, #F9D423);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition-duration: 1.2s;
+
+
+    }
+  }
+
+@media screen and (min-width: 300px) {
+    @media screen and (max-width: 600px) {
+        .works{
+            flex-direction: column-reverse;
+        }
+        .workdone{
+            width: 90%;
+        }
+        .imgcont{
+            width: 90%;
+        }
+        .imgcont img{
+            animation-name: showimg;
+            animation-direction: linear;
+            animation-timeline: view();
+            animation-range: entry 0 cover 160%;
+        }
+        .workshead{
+            text-align: center;
+            font-size: 8vw;
+        }
+
+        .workscont{
+            width: 95%;
+        }
+        .workdone {
+            width: 95%;
+            font-size: 3vw;
+        }
+        .workdone:hover{
+            font-size: 3vw;
+            transition-duration: 0.3s;
+        
+        }
+        .workdone p{
+            width: 95%;
+
+            h6{
+                font-size: 3vw;
+            }
+        }
+        .workdone img{
+            display: none;
+        }
+        /* #workdone3{
+            display: none;
+        } */
+
+       @keyframes showimg {
+         0%{
+            transform: rotatex(60deg);
+         }
+         100%{
+            transform: rotatex(0deg);
+         }
+       }
+    }}
+
+    @media screen and (min-width: 601px) {
+        @media screen and (max-width: 1023px) {
+            .works{
+                flex-direction: column-reverse;
+            }
+            .workdone{
+                width: 90%;
+            }
+            .imgcont{
+                width: 80%;
+            }
+            .imgcont img{
+                animation-name: showimg;
+                animation-direction: linear;
+                animation-timeline: view();
+                animation-range: entry 0 cover 160%;
+            }
+            .workshead{
+                text-align: center;
+                font-size: 8vw;
+            }
+    
+            .workscont{
+                width: 95%;
+            }
+            .workdone {
+                width: 95%;
+                font-size: 2.5vw;
+            }
+            .workdone:hover{
+                font-size: 2.5vw;
+                transition-duration: 0.3s;
+            
+            }
+            .workdone p{
+                width: 95%;
+    
+                h6{
+                    font-size: 3vw;
+                }
+            }
+            .workdone img{
+                display: none;
+            }
+            /* #workdone3{
+                display: none;
+            } */
+    
+           @keyframes showimg {
+             0%{
+                transform: rotatex(60deg);
+             }
+             100%{
+                transform: rotatex(0deg);
+             }
+           }
+        }}
+
+    @media screen and (min-width:1024px) {
+        @media screen and (max-width:1439px) {
+            .workscont{
+                width: 55%;
+            }
+            .imgcont{
+                width: 45%;
+            }
+            .workdone{
+                width: 80%;
+                font-size: 1vw;
+            }
+            .workdone:hover{
+                font-size: 1.4vw;
+            }
+            .workdone p{
+                h6{
+                    font-size: 1.5vw;
+                }
+            }
+        }}

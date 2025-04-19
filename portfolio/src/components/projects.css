@@ -1,0 +1,107 @@
+.works1{
+   
+        width: 100vw;
+        height: 100vh;
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        
+}
+
+.resume-btn1{
+    width: fit-content;
+    position: sticky;
+    top: 2vw;
+    left: 2vw;
+    z-index: 2;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 2px;
+    /* position: relative; */
+}
+.resume-btn1 a{
+    text-decoration: none;
+    font-family: 'Inter';
+    font-size: 1.3vw;
+    color: black;
+}
+
+@media screen and (min-width: 300px) {
+    @media screen and (max-width: 600px) {
+        .works{
+            height: 130vh;
+        }
+        .works1{
+            height: 150vh;
+            flex-direction: column-reverse;
+        }
+         
+        #img2{
+            animation-name: zoom;
+            animation-direction: linear;
+            animation-timeline: view();
+            animation-range: entry 0 cover 100%;
+        }
+        @keyframes zoom {
+           0%{
+            transform: scale(0.5);
+           }
+           100%{
+            transform: scale(1);
+           }
+        }
+        .resume-btn1 a{
+            font-size: 4vw;
+        }
+        .resume-btn1{
+            top: 5vh;
+            left: 82vw;
+        }
+    }}
+
+    @media screen and (min-width: 601px) {
+        @media screen and (max-width: 1023px) {
+            .works{
+                height: 130vh;
+            }
+            .works1{
+                height: 160vh;
+                flex-direction: column-reverse;
+            }
+             
+            #img2{
+                animation-name: zoom;
+                animation-direction: linear;
+                animation-timeline: view();
+                animation-range: entry 0 cover 100%;
+            }
+            @keyframes zoom {
+               0%{
+                transform: scale(0.5);
+               }
+               100%{
+                transform: scale(1);
+               }
+            }
+            .resume-btn1 a{
+                font-size: 3vw;
+            }
+            .resume-btn1{
+                top: 5vh;
+                left: 82vw;
+            }
+        }}
+
+    @media screen and (min-width:1024px) {
+        @media screen and (max-width:1439px) {
+            .resume-btn1{
+                top: 5vw;
+            }
+            .resume-btn1 a{
+                font-size: 1.8vw;
+            }
+        }}

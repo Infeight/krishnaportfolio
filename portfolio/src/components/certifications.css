@@ -1,0 +1,123 @@
+.certs1{
+    background-color:transparent;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.heading{
+    text-align: right;
+    font-size: 4.5vw;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    top: 0vw;
+    box-sizing: border-box;
+    padding-right: 3vw;
+    font-weight: 100;
+    color: rgb(0, 0, 62);
+}
+.certs{
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1490px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    position: relative;
+    top: 6vw;
+}
+.certificate{
+    width: 80%;
+    height: 85%;
+    margin: auto;
+    box-shadow: 0 0 5px 0px #ffffff;  
+  box-sizing: border-box;
+  padding: 10px;
+  transition-duration: 0.5s;
+ 
+}
+.certificate:hover{
+  box-shadow: 0 0 5px #ffffff;
+  width: 95%;
+    height: 95%;  
+  transition-duration: 0.5s;
+
+}
+.certificate img{
+    width: 100%;
+    height: 90%;
+}
+.certificate h2{
+    display: flex;
+    align-items: center;
+    height: 10%;
+    margin: 0;
+    width: 100%;
+  color:  rgb(0, 0, 62);
+    font-family: 'Inter';
+    font-size: 1.4vw;
+}
+.certificate iframe{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width:1024px) {
+    @media screen and (max-width:1439px) {
+        .heading{
+            font-size: 5vw;
+            top: 0vw;
+        }
+       
+        .certificate{
+            width: 90%;
+            height: 80%;
+        }
+        
+    }}
+
+    @media screen and (min-width: 300px) {
+        @media screen and (max-width: 600px) {
+            .heading{
+                font-size: 10.5vw;
+                top: 0vw;
+                text-align: start;
+                left: 5vw;
+            }
+            .certs{
+                top: 20vw;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+            }
+            .certs1{
+                height: auto;
+            }
+            .certificate{
+                margin-bottom: 5vw;
+            }
+            .certificate h2{
+                font-size: 4vw;
+            }
+            
+        }}
+
+        @media screen and (min-width: 601px) {
+            @media screen and (max-width: 1023px) {
+                .heading{
+                    font-size: 7.5vw;
+                    text-align: left;
+                    left: 4vw;
+                }
+                .certs{
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: 33% 33% 33%;
+                }
+                .certificate h2{
+                    font-size: 2.5vw;
+                    height: 4vw;
+                }
+            }}

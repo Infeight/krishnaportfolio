@@ -1,0 +1,325 @@
+.education{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.study{
+    width: 32vw;
+    height: 32vw;
+    border-radius: 10px;
+    background-color: transparent;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border: 0;
+   margin: 0;
+}
+
+.study1{
+    width: 100%;
+    height: 34%;
+    box-sizing: border-box;
+    padding: 10px;
+    transition-duration: 0.3s;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+}
+
+
+
+.study1 p{
+    word-wrap: break-word;
+font-family: 'Inter';
+transition-duration: 0.3s;
+font-size: 0vw;
+opacity: 0;
+}
+
+.study1 h6{
+font-family: 'Inter';
+    margin: 0;
+    font-size: 2vw;
+transition-duration: 0.3s;
+ font-weight: 200;
+}
+
+#study1{
+background-color: transparent;
+    color:  #002e49;
+    border-radius: 10px 10px 0 0px;
+}
+
+#study1:hover{
+    p{
+        opacity: 1;
+        font-size: 1.1vw;
+    }
+    height: 80%;
+}
+
+#study2{
+    background-color: transparent;
+    color:  #002e49;
+   
+}
+
+#study2:hover{
+    p{
+        opacity: 1;
+        font-size: 1.1vw;
+    }
+    height: 80%;
+}
+
+#study3{
+    background-color: transparent;
+    color:  #002e49;
+border-radius: 0 0px 10px 10px;
+
+}
+
+#study3:hover{
+    p{
+        opacity: 1;
+        font-size: 1.1vw;
+    }
+    height: 80%;
+}
+
+.language{
+    width: 40vw;
+    height: 40vw;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 62);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.language iframe{
+    width: 100%;
+    height: 35%;
+    border: none;
+    outline: none;
+}
+
+.lang1{
+    font-size: 1.1vw;
+    font-family: 'Inter';
+    color: aliceblue;
+    font-weight: 300;
+    width: 80%;
+}
+.lang1 h6{
+    margin: 0;
+    font-size: 1.2vw;
+}
+
+@media screen and (min-width: 300px) {
+    @media screen and (max-width: 600px) {
+        .education{
+            flex-direction: column;
+            height: 140vh;
+            margin-top: 15vw;
+        }
+        .study{
+            width: 90%;
+            height: 80%;
+        }
+        .study1{
+            margin-bottom: 5vw;
+            align-items: normal;
+            animation-name: appearleft;
+            animation-direction: linear;
+            animation-timeline: view();
+            animation-range: entry 0 cover 100%;
+        }
+        .study1 h6{
+            font-size: 5.5vw;
+        }
+        .study1 p{
+            font-size: 3.5vw;
+            opacity: 1;
+        }
+
+        #study1:hover{
+            p{
+                opacity: 1;
+                font-size: 3.2vw;
+            }
+            height: 80%;
+        }
+
+        #study2:hover{
+            p{
+                opacity: 1;
+                font-size: 3.2vw;
+            }
+            height: 80%;
+        }
+
+        #study3:hover{
+            p{
+                opacity: 1;
+                font-size: 3.2vw;
+            }
+            height: 80%;
+        }
+
+        @keyframes appearleft {
+            0%{
+                opacity: 0;
+                transition-duration: 0.5s;
+               
+            }
+            100%{
+                opacity: 1;
+                scale: 1;
+                transition-duration: 0.5s;
+
+            }
+        }
+
+        .language{
+            width: 90%;
+            height: 50%;
+        }
+
+        .lang1 h6{
+            font-size: 3vw;
+        }
+        .lang1{
+            width: 90%;
+            font-size: 3vw;
+        }
+    }}
+
+
+    @media screen and (min-width: 601px) {
+        @media screen and (max-width: 1023px) {
+
+            .education{
+                flex-direction: column;
+                height: 140vh;
+                margin-top: 15vw;
+            }
+            .study{
+                width: 90%;
+                height: 80%;
+            }
+            .study1{
+                margin-bottom: 5vw;
+                align-items: normal;
+                animation-name: appearleft;
+                animation-direction: linear;
+                animation-timeline: view();
+                animation-range: entry 0 cover 100%;
+            }
+            .study1 h6{
+                font-size: 4.5vw;
+            }
+            .study1 p{
+                font-size: 2.5vw;
+                opacity: 1;
+            }
+    
+            #study1:hover{
+                p{
+                    opacity: 1;
+                    font-size: 3.2vw;
+                }
+                height: 80%;
+            }
+    
+            #study2:hover{
+                p{
+                    opacity: 1;
+                    font-size: 3.2vw;
+                }
+                height: 80%;
+            }
+    
+            #study3:hover{
+                p{
+                    opacity: 1;
+                    font-size: 3.2vw;
+                }
+                height: 80%;
+            }
+    
+            @keyframes appearleft {
+                0%{
+                    opacity: 0;
+                    transition-duration: 0.5s;
+                   
+                }
+                100%{
+                    opacity: 1;
+                    scale: 1;
+                    transition-duration: 0.5s;
+    
+                }
+            }
+    
+            .language{
+                width: 90%;
+                height: 50%;
+            }
+    
+            .lang1 h6{
+                font-size: 3vw;
+            }
+            .lang1{
+                width: 90%;
+                font-size: 2.5vw;
+            }
+
+        }}
+
+
+    @media screen and (min-width:1024px) {
+        @media screen and (max-width:1439px) {
+            .study{
+                height: 55%;
+                width: 34vw;
+            }
+            #study1:hover{
+                p{
+                    opacity: 1;
+                    font-size: 1.5vw;
+                }
+                height: 80%;
+            }
+    
+            #study2:hover{
+                p{
+                    opacity: 1;
+                    font-size: 1.5vw;
+                }
+                height: 80%;
+            }
+    
+            #study3:hover{
+                p{
+                    opacity: 1;
+                    font-size: 1.5vw;
+                }
+                height: 80%;
+            }
+            .language{
+                height: 60%;
+            }
+            .lang1{
+                width: 90%;
+                font-size: 1.4vw;
+            }
+            .lang1 h6{
+                font-size: 1.4vw;
+            }
+        }}
