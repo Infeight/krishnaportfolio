@@ -256,7 +256,7 @@ justify-content: space-evenly;
     @media screen and (max-width: 600px) {
         .works{
             flex-direction: column-reverse;
-            height: 115vh;
+            height: 105vh;
         }
         .workdone{
             width: 90%;
@@ -280,10 +280,10 @@ justify-content: space-evenly;
         }
         .workdone {
             width: 95%;
-            font-size: 3.2vw;
+            font-size: 3.5vw;
         }
         .workdone:hover{
-            font-size: 3.2vw;
+            font-size: 3.5vw;
             transition-duration: 0.3s;
         
         }
@@ -291,7 +291,7 @@ justify-content: space-evenly;
             width: 95%;
 
             h6{
-                font-size: 3.2vw;
+                font-size: 3.5vw;
             }
         }
         .workdone img{
