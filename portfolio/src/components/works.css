@@ -280,10 +280,10 @@ justify-content: space-evenly;
         }
         .workdone {
             width: 95%;
-            font-size: 3vw;
+            font-size: 3.2vw;
         }
         .workdone:hover{
-            font-size: 3vw;
+            font-size: 3.2vw;
             transition-duration: 0.3s;
         
         }
@@ -291,7 +291,7 @@ justify-content: space-evenly;
             width: 95%;
 
             h6{
-                font-size: 3vw;
+                font-size: 3.2vw;
             }
         }
         .workdone img{
