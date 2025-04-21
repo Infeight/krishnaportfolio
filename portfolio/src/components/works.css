@@ -256,7 +256,7 @@ justify-content: space-evenly;
     @media screen and (max-width: 600px) {
         .works{
             flex-direction: column-reverse;
-            height: 130vh;
+            height: 115vh;
         }
         .workdone{
             width: 90%;

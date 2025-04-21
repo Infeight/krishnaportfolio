@@ -45,7 +45,7 @@
 @media screen and (min-width: 300px) {
     @media screen and (max-width: 600px) {
         .works{
-            height: 130vh;
+            height: 115vh;
         }
         .works1{
             height: 160vh;
