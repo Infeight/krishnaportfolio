@@ -28,6 +28,7 @@
     grid-template-rows: 50% 50%;
     position: relative;
     top: 6vw;
+
 }
 .certificate{
     width: 80%;
@@ -37,23 +38,103 @@
   box-sizing: border-box;
   padding: 10px;
   transition-duration: 0.5s;
+  display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+  
  
 }
 .certificate:hover{
   box-shadow: 0 0 5px #ffffff;
-  width: 95%;
-    height: 95%;  
+  /* /* width: 95%; */
+    height: 95%;   
   transition-duration: 0.5s;
 
+  img{
+    width: 80%;
+    transition-duration: 0.5s;
+  }
+
+  .cred{
+    display: flex;
+  }
+
 }
-.certificate img{
+
+.details{
+    display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 90%;
+}
+.cred{
+    display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        width: 100%;
+        font-size: 1.2vw;
+        font-family: 'Inter';
+        flex-direction: column;
+        height: 80%;
+        margin-top: 1vw;
+        display: none;
+}
+
+.cred p{
+    margin: 0;
+}
+
+.cred a{
+    background-color: rgb(0, 0, 62);
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    transition-duration: 0.2s;
+    font-size: 1.2vw;
+
+}
+.cred a:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 62);
+    transition-duration: 0.2s;
+}
+
+.credid{
     width: 100%;
-    height: 90%;
+    overflow-x: scroll;
+ white-space: nowrap;
+}
+
+.credid::-webkit-scrollbar{
+    height: 4px;
+    border-radius: 5px;
+}
+.credid::-webkit-scrollbar-track{
+    background-color:transparent ;
+    border-radius: 5px;
+
+}
+.credid::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 0, 62) ;
+    border-radius: 5px;
+}
+
+.certificate img{
+    width: 95%;
+    margin-bottom: 1vw;
+    transition-duration: 0.5s;
 }
 .certificate h2{
     display: flex;
     align-items: center;
-    height: 10%;
+    height: 20%;
     margin: 0;
     width: 100%;
   color:  rgb(0, 0, 62);
@@ -98,6 +179,23 @@
             }
             .certificate{
                 margin-bottom: 5vw;
+                height: 75vw;
+            }
+            .certificate img{
+                margin-bottom: 5vw;
+            }
+            .certificate:hover{
+                height: 85vw;
+            }
+            .details{
+                height: 30vw;
+            }
+            .cred{
+                font-size: 3.5vw;
+            }
+            .cred a{
+                font-size: 3.2vw;
+                left: 0;
             }
             .certificate h2{
                 font-size: 4vw;
@@ -108,16 +206,42 @@
         @media screen and (min-width: 601px) {
             @media screen and (max-width: 1023px) {
                 .heading{
-                    font-size: 7.5vw;
-                    text-align: left;
-                    left: 4vw;
+                    font-size: 10.5vw;
+                    top: 0vw;
+                    text-align: start;
+                    left: 5vw;
                 }
                 .certs{
-                    grid-template-columns: 50% 50%;
-                    grid-template-rows: 33% 33% 33%;
+                    top: 20vw;
+                    display: flex;
+                    flex-direction: column;
+                    height: auto;
+                }
+                .certs1{
+                    height: auto;
+                }
+                .certificate{
+                    margin-bottom: 5vw;
+                    height: 75vw;
+                }
+                .certificate img{
+                    margin-bottom: 5vw;
+                }
+                .certificate:hover{
+                    height: 85vw;
+                }
+                .details{
+                    height: 30vw;
+                }
+                .cred{
+                    font-size: 3.5vw;
+                }
+                .cred a{
+                    font-size: 3.2vw;
+                    left: 0;
                 }
                 .certificate h2{
-                    font-size: 2.5vw;
-                    height: 4vw;
+                    font-size: 4vw;
                 }
+                
             }}

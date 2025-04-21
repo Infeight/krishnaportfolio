@@ -1,6 +1,7 @@
 import React from 'react'
 import './certifications.css'
 import { Link } from 'react-router-dom'
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Certifications = () => {
   return (
@@ -15,23 +16,68 @@ const Certifications = () => {
           <div className="certs">
           <div className='certificate'>
               <img src="cert1.jpeg" alt="" />
-              <h2>12 March 2025</h2>
+              <div className="details">
+              <h2>Supervised Machine Learning : Regression and Classification</h2>
+            
+              <div className="cred">
+              <p>Credential ID:</p>
+                <div className="credid">9SY2SVFX9KCA</div>    
+              <a href="https://www.coursera.org/account/accomplishments/verify/9SY2SVFX9KCA?trk=public_profile_see-credential">Show credential <FaExternalLinkAlt />              </a>
+              </div>
+
+              </div>
           </div>
           <div className='certificate'>
               <img src="cert2.jpg" alt="" />
-              <h2>26 June 2024</h2>
+              <div className="details">
+              <h2>Data Structures & Algorithms using Cpp</h2>
+            
+              <div className="cred">
+              <p>Credential ID:</p>
+                <div className="credid">UC-f56616c6-b566-44eb-b868-e66214962a33</div>    
+              <a href="https://www.udemy.com/certificate/UC-f56616c6-b566-44eb-b868-e66214962a33/?trk=public_profile_see-credential">Show credential  <FaExternalLinkAlt />              </a>
+              </div>
+
+              </div>
           </div>
           <div className='certificate'>
               <img src="cert3.png" alt="" />
-              <h2>21 December 2023</h2>
+              <div className="details">
+              <h2>Circuit Simulation Onramp</h2>
+            
+              <div className="cred">
+              {/* <p>Credential ID:</p> */}
+                <div className="credid"></div>    
+              <a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=425329ab-56da-480e-932d-8270d8027077&&trk=public_profile_see-credential">Show credential <FaExternalLinkAlt />              </a>
+              </div>
+
+              </div>
           </div>
           <div className='certificate'>
               <img src="cert4.png" alt="" />
-              <h2>20 December 2023</h2>
+              <div className="details">
+              <h2>Simulink Onramp</h2>
+            
+              <div className="cred">
+              {/* <p>Credential ID:</p> */}
+                <div className="credid"></div>    
+              <a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=6529a18c-2a7a-46f7-ab68-d88adb5a822d&&trk=public_profile_see-credential">Show credential  <FaExternalLinkAlt />              </a>
+              </div>
+
+              </div>
           </div>
           <div className='certificate'>
               <img src="cert5.png" alt="" />
-              <h2>02 January 2023</h2>
+              <div className="details">
+              <h2>Microsoft Certified: Azure Fundamentals</h2>
+            
+              <div className="cred">
+              <p>Credential ID:</p>
+                <div className="credid">I555-4897</div>    
+              <a href="https://learn.microsoft.com/en-us/users/krishnatejaregintala-3839/?trk=public_profile_see-credential">Show credential <FaExternalLinkAlt />              </a>
+              </div>
+
+              </div>
           </div>
   
           <div className='certificate'>

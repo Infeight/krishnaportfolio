@@ -6,7 +6,10 @@ margin-top: 5vh;
 display: flex;
 align-items: center;
 justify-content: space-evenly;
+
 }
+
+
 .workscont{
     width: 55%;
     height: 90%;
@@ -15,6 +18,71 @@ justify-content: space-evenly;
     align-items: center;
     justify-content: space-evenly;
 }
+
+.works:hover{
+      #workdone1{
+        transform-origin: top left; 
+        transition-duration: 0.5s;
+        animation: pulse 2s infinite;;
+      }
+
+      #workdone2{
+        transform-origin: top right; 
+        transition-duration: 0.5s;
+        animation: pulse1 2s infinite;;
+      }
+      
+      #workdone3{
+        transform-origin: top left; 
+        transition-duration: 0.5s;
+        animation: pulse 2s infinite;;
+      }
+}
+
+#screw1{
+    width: 2vw;
+    position: absolute;
+    height: auto;
+    top: 1vw;
+    left: 1vw;
+    transform: none;
+}
+#screw1:hover{
+    animation: rotate 1.5s 0.4s 1  ease-in-out;
+}
+#screw2:hover{
+    animation: rotate 1.5s 0.4s 1  ease-in-out;
+}
+#screw3:hover{
+    animation: rotate 1.5s 0.4s 1  ease-in-out;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-1000deg);
+    }
+}
+
+#screw2{
+    width: 2vw;
+    position: absolute;
+    height: auto;
+    top: 1vw;
+    right: 1vw;
+}
+
+#screw3{
+    width:2vw;
+    position: absolute;
+    height: auto;
+    top: 1vw;
+    left: 1vw;
+    transform: none;
+}
+
 .imgcont{
     width: 40%;
     height: auto;
@@ -122,10 +190,73 @@ justify-content: space-evenly;
     }
   }
 
+
+  /* animation: pulse 2s infinite; */
+  #workdone1{
+    transform-origin: top left; 
+   animation: none;
+  transform: rotate(13deg);
+  transition-duration: 0.5s;
+  }
+
+  #workdone1:hover{
+    animation: none;
+  }
+
+  #workdone2{
+    transform-origin:  top right;
+    animation: none;
+  transform: rotate(-10deg);
+  transition-duration: 0.5s;
+  }
+
+  #workdone2:hover{
+    animation: none;
+  }
+
+  #workdone3{
+    transform-origin:  top left; /* This is key! */
+    animation: none;
+    transform: rotate(16deg);
+    transition-duration: 0.5s;
+  }
+
+  #workdone3:hover{
+    animation: none;
+  }
+
+
+  @keyframes pulse {
+    0% {
+      transform:  rotate(0deg);
+    }
+    50% {
+      transform:  rotate(1.5deg);
+    }
+    100% {
+      transform:  rotate(0deg);
+
+    }
+  }
+  @keyframes pulse1 {
+    0% {
+      transform:  rotate(0deg);
+    }
+    50% {
+      transform:  rotate(-2deg);
+    }
+    100% {
+      transform:  rotate(0deg);
+
+    }
+  }
+
+
 @media screen and (min-width: 300px) {
     @media screen and (max-width: 600px) {
         .works{
             flex-direction: column-reverse;
+            height: 130vh;
         }
         .workdone{
             width: 90%;
@@ -166,9 +297,24 @@ justify-content: space-evenly;
         .workdone img{
             display: none;
         }
-        /* #workdone3{
-            display: none;
-        } */
+      
+        #workdone1{
+            transform-origin: top left; 
+            transition-duration: 0.5s;
+            animation: pulse 2s infinite;;
+          }
+    
+          #workdone2{
+            transform-origin: top right; 
+            transition-duration: 0.5s;
+            animation: pulse1 2s infinite;;
+          }
+          
+          #workdone3{
+            transform-origin: top left; 
+            transition-duration: 0.5s;
+            animation: pulse 2s infinite;;
+          }
 
        @keyframes showimg {
          0%{
@@ -184,12 +330,13 @@ justify-content: space-evenly;
         @media screen and (max-width: 1023px) {
             .works{
                 flex-direction: column-reverse;
+                height: 130vh;
             }
             .workdone{
                 width: 90%;
             }
             .imgcont{
-                width: 80%;
+                width: 90%;
             }
             .imgcont img{
                 animation-name: showimg;
@@ -210,7 +357,7 @@ justify-content: space-evenly;
                 font-size: 2.5vw;
             }
             .workdone:hover{
-                font-size: 2.5vw;
+                font-size: 3vw;
                 transition-duration: 0.3s;
             
             }
@@ -224,9 +371,24 @@ justify-content: space-evenly;
             .workdone img{
                 display: none;
             }
-            /* #workdone3{
-                display: none;
-            } */
+          
+            #workdone1{
+                transform-origin: top left; 
+                transition-duration: 0.5s;
+                animation: pulse 2s infinite;;
+              }
+        
+              #workdone2{
+                transform-origin: top right; 
+                transition-duration: 0.5s;
+                animation: pulse1 2s infinite;;
+              }
+              
+              #workdone3{
+                transform-origin: top left; 
+                transition-duration: 0.5s;
+                animation: pulse 2s infinite;;
+              }
     
            @keyframes showimg {
              0%{

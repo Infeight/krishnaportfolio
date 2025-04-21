@@ -2,6 +2,37 @@ import React from 'react'
 import './education.css'
 
 const Education = () => {
+
+  const drag = (e)=>{
+   document.getElementById('language').style.animationName = 'swing'
+   document.getElementById('language').querySelector('#langiframe').style.transform = 'rotateY(180deg)'
+   document.getElementById('language').querySelectorAll('.lang1').forEach(element => {
+      element.style.transform = 'rotateY(180deg)'
+    });
+    e.target.style.display = 'none'
+    document.getElementById('do').style.display = 'block'
+    setTimeout(()=>{
+      document.getElementById('language').style.animationName = ''
+      document.getElementById('language').querySelectorAll('.lang1').forEach(element => {
+        element.style.transform = 'rotateY(180deg)'
+      });
+    },1000)
+  }
+
+  const normal = (e)=>{
+    document.getElementById('language').style.animationName = ''
+       document.getElementById('language').querySelector('#langiframe').style.transform = 'rotateY(0deg)'
+     document.getElementById('language').querySelectorAll('.lang1').forEach(element => {
+      element.style.transform = 'rotateY(0deg)'
+    });
+    e.target.style.display = 'none'
+    document.getElementById('dont').style.display = 'block'
+
+     setTimeout(()=>{
+  document.getElementById('language').style.transform = 'rotateY(0deg)'
+    },1000)
+   }
+
   return (
     <>
       <div className="education">
@@ -36,9 +67,13 @@ Achieved academic excellence in the 10th-grade board exams, building a solid fou
                 </p>
             </div>
         </div>
-        <div className="language">
 
-        <iframe src="https://lottie.host/embed/5918a1c2-5779-421a-ab39-d9375ed660fc/XW0UqGjzY4.lottie"></iframe>
+        <button id='dont' onClick={drag}>Don't Click</button>
+        <button id='do' onClick={normal}>Click     </button>
+     
+        <div className="language"  id='language'>
+
+        <iframe id='langiframe' src="https://lottie.host/embed/5918a1c2-5779-421a-ab39-d9375ed660fc/XW0UqGjzY4.lottie"></iframe>
 
            <div className="lang1">
          <h6>  English – Fluent (Professional Working Proficiency)</h6>
@@ -57,7 +92,9 @@ Achieved academic excellence in the 10th-grade board exams, building a solid fou
 
 
         </div>
+       
       </div>
+    
     </>
   )
 }

@@ -20,23 +20,35 @@
     backdrop-filter: blur(10px);
     box-sizing: border-box;
     padding: 5px;
-    border-radius: 2px;
+    border-radius: 5px;
+    transition-duration: 0.2s;
     /* position: relative; */
+}
+.resume-btn1:hover{
+    background-color:  rgb(0, 0, 62);
+    transition-duration: 0.2s;
+    a{
+        color: white;
+    transition-duration: 0.2s;
+
+    }
+ 
 }
 .resume-btn1 a{
     text-decoration: none;
     font-family: 'Inter';
     font-size: 1.3vw;
     color: black;
+    transition-duration: 0.2s;
 }
 
 @media screen and (min-width: 300px) {
     @media screen and (max-width: 600px) {
         .works{
-            height: 115vh;
+            height: 130vh;
         }
         .works1{
-            height: 140vh;
+            height: 160vh;
             flex-direction: column-reverse;
         }
          
@@ -103,5 +115,11 @@
             }
             .resume-btn1 a{
                 font-size: 1.8vw;
+            }
+            .works{
+                height:80vw;
+            }
+            .works1{
+                height: 80vw;
             }
         }}

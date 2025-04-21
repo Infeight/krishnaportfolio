@@ -1,12 +1,13 @@
 .education{
     width: 100vw;
-    height: 100vh;
+    height: 60vw;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .study{
+    position: relative;
     width: 32vw;
     height: 32vw;
     border-radius: 10px;
@@ -17,7 +18,26 @@
    justify-content: center;
    border: 0;
    margin: 0;
+   position: relative;
+   animation-name: appearlow;
+   animation-direction: linear;
+   animation-timeline: view();
+   animation-range: entry 0 cover 50%;
+  transition-duration: 0.5s;
+ 
 }
+
+@keyframes appearlow {
+    0%{
+        left: -50vw;
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
+
 
 .study1{
     width: 100%;
@@ -56,6 +76,9 @@ background-color: transparent;
 }
 
 #study1:hover{
+    h6{
+        font-weight: 400;
+    }
     p{
         opacity: 1;
         font-size: 1.1vw;
@@ -70,6 +93,9 @@ background-color: transparent;
 }
 
 #study2:hover{
+    h6{
+        font-weight: 400;
+    }
     p{
         opacity: 1;
         font-size: 1.1vw;
@@ -85,6 +111,9 @@ border-radius: 0 0px 10px 10px;
 }
 
 #study3:hover{
+      h6{
+       font-weight: 400;
+    }
     p{
         opacity: 1;
         font-size: 1.1vw;
@@ -93,20 +122,145 @@ border-radius: 0 0px 10px 10px;
 }
 
 .language{
-    width: 40vw;
-    height: 40vw;
+    width: 35vw;
+    height: 30vw;
+    opacity: 1;
     border-radius: 10px;
     background-color: rgb(0, 0, 62);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+ position: relative;
+
+ animation-duration: 1s;
+ animation-iteration-count: 1;
+ animation-timing-function: ease-in-out;
+    /* animation: none; */
+transition-duration: 0.5s;
+transform-origin: top center;
+
+} 
+
+@keyframes swing {
+    0%{
+        transform: rotate(0deg);
+
+    }
+    25%{
+        transform: rotate(-15deg);
+
+    }
+    50%{
+        transform: rotate(380deg);
+
+    }
+    75%{
+        transform: rotate(345deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
+
+#dont{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50vw;
+    border: none;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+    cursor: pointer;
+    font-size: 1vw;
+    background: linear-gradient(45deg, #ff0033, #cc0000, #ff3300, #8b0000);
+    background-size: 300% 300%;
+    animation: dangerPulse 3s ease-in-out infinite, fading;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    transition: transform 0.2s ease;
+    color: #ffffff;
+text-shadow: 0 0 5px rgba(255, 100, 100, 0.7);
+font-family: 'Inter';
+font-size: 1.2vw;
+font-weight: 600;
+/* animation-name: fading; */
+animation-direction: linear;
+animation-timeline: view();
+animation-range: entry 0 cover 50%;
+transition-duration: 0.5s;
+
+}
+
+#dont:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
+}
+
+@keyframes fading {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes dangerPulse {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+#do{
+    display: none;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50vw;
+    border: none;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+    cursor: pointer;
+    font-size: 1vw;
+    background:linear-gradient(45deg, #00c9ff, #92fe9d);
+    background-size: 300% 300%;
+    animation: dangerPulse 3s ease-in-out infinite;
+    box-shadow:0 0 10px rgba(0, 200, 255, 0.3);
+    transition: transform 0.2s ease;
+    color: #ffffff;
+text-shadow: 0 0 5px rgba(255, 100, 100, 0.7);
+font-family: 'Inter';
+font-size: 1.2vw;
+font-weight: 600;
+}
+
+#do:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(0, 200, 255, 0.6);
+}
+
+.language:hover{
+    height: 35vw;
+    iframe{
+        height: 35%;
+        transition-duration: 0.5s;
+    }
+    .lang1{
+        font-size: 1.1vw;
+        transition-duration: 0.5s;
+    }
+    transition-duration: 0.5s;
+}
+
 .language iframe{
     width: 100%;
-    height: 35%;
+    height: 60%;
     border: none;
     outline: none;
+    transition-duration: 0.5s;
 }
 
 .lang1{
@@ -115,22 +269,28 @@ border-radius: 0 0px 10px 10px;
     color: aliceblue;
     font-weight: 300;
     width: 80%;
+    font-size: 0;
+    transition-duration: 0.5s;
+    /* opacity: 0; */
 }
 .lang1 h6{
     margin: 0;
     font-size: 1.2vw;
 }
 
+
+
 @media screen and (min-width: 300px) {
     @media screen and (max-width: 600px) {
         .education{
             flex-direction: column;
-            height: 140vh;
+            height: 170vh;
             margin-top: 15vw;
         }
         .study{
             width: 90%;
-            height: 80%;
+            height: 70%;
+            animation: none;
         }
         .study1{
             margin-bottom: 5vw;
@@ -139,13 +299,41 @@ border-radius: 0 0px 10px 10px;
             animation-direction: linear;
             animation-timeline: view();
             animation-range: entry 0 cover 100%;
+           
         }
         .study1 h6{
             font-size: 5.5vw;
         }
         .study1 p{
-            font-size: 3.5vw;
+            font-size: 3.2vw;
             opacity: 1;
+        }
+
+        #study1{
+            animation-name: left;
+            animation-direction: linear;
+            animation-timeline: view();
+            animation-range: entry 0 cover 40%;
+            position: relative;
+            
+        }
+
+        #study2{
+            animation-name: left;
+            animation-direction: linear;
+            animation-timeline: view();
+            animation-range: entry 0 cover 40%;
+            position: relative;
+         
+        }
+
+        #study3{
+            animation-name: left;
+            animation-direction: linear;
+            animation-timeline: view();
+            animation-range: entry 0 cover 40%;
+            position: relative;
+           
         }
 
         #study1:hover{
@@ -172,6 +360,8 @@ border-radius: 0 0px 10px 10px;
             height: 80%;
         }
 
+
+
         @keyframes appearleft {
             0%{
                 opacity: 0;
@@ -188,15 +378,62 @@ border-radius: 0 0px 10px 10px;
 
         .language{
             width: 90%;
-            height: 50%;
+            height: 40%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .language iframe{
+            height: 40%;
+        }
+        .language:hover{
+            iframe{
+                height: 60%;
+            }
+            width: 90%;
+            height: 40%;
+            .lang1{
+                font-size: 3.2vw;
+            }
         }
 
         .lang1 h6{
-            font-size: 3vw;
+            font-size: 3.2vw;
         }
         .lang1{
             width: 90%;
-            font-size: 3vw;
+            font-size: 3.2vw;
+        }
+
+        #dont{
+            width: 25vw;
+            height: 10vw;
+            font-size: 3.5vw;
+            border-radius: 10px;
+            margin: 5vw;
+        }
+        #do{
+            width: 25vw;
+            height: 10vw;
+            font-size: 3.5vw;
+            border-radius: 10px;
+            margin: 5vw;
+        }
+
+        @keyframes left {
+            0%{
+                left: -50vw;
+            }
+            100%{
+                left: 0;
+            }
+        }
+        @keyframes right {
+            0%{
+                left: 50vw;
+            }
+            100%{
+                left: 0;
+            }
         }
     }}
 
@@ -206,12 +443,13 @@ border-radius: 0 0px 10px 10px;
 
             .education{
                 flex-direction: column;
-                height: 140vh;
+                height: 170vh;
                 margin-top: 15vw;
             }
             .study{
                 width: 90%;
-                height: 80%;
+                height: 70%;
+                animation: none;
             }
             .study1{
                 margin-bottom: 5vw;
@@ -220,13 +458,41 @@ border-radius: 0 0px 10px 10px;
                 animation-direction: linear;
                 animation-timeline: view();
                 animation-range: entry 0 cover 100%;
+               
             }
             .study1 h6{
                 font-size: 4.5vw;
             }
             .study1 p{
-                font-size: 2.5vw;
+                font-size: 3vw;
                 opacity: 1;
+            }
+    
+            #study1{
+                animation-name: left;
+                animation-direction: linear;
+                animation-timeline: view();
+                animation-range: entry 0 cover 40%;
+                position: relative;
+                
+            }
+    
+            #study2{
+                animation-name: left;
+                animation-direction: linear;
+                animation-timeline: view();
+                animation-range: entry 0 cover 40%;
+                position: relative;
+             
+            }
+    
+            #study3{
+                animation-name: left;
+                animation-direction: linear;
+                animation-timeline: view();
+                animation-range: entry 0 cover 40%;
+                position: relative;
+               
             }
     
             #study1:hover{
@@ -253,6 +519,8 @@ border-radius: 0 0px 10px 10px;
                 height: 80%;
             }
     
+    
+    
             @keyframes appearleft {
                 0%{
                     opacity: 0;
@@ -269,15 +537,62 @@ border-radius: 0 0px 10px 10px;
     
             .language{
                 width: 90%;
-                height: 50%;
+                height: 40%;
+                box-sizing: border-box;
+                padding: 10px;
+            }
+            .language iframe{
+                height: 40%;
+            }
+            .language:hover{
+                iframe{
+                    height: 60%;
+                }
+                width: 90%;
+                height: 40%;
+                .lang1{
+                    font-size: 3.2vw;
+                }
             }
     
             .lang1 h6{
-                font-size: 3vw;
+                font-size: 3.2vw;
             }
             .lang1{
                 width: 90%;
-                font-size: 2.5vw;
+                font-size: 3.2vw;
+            }
+    
+            #dont{
+                width: 25vw;
+                height: 10vw;
+                font-size: 3.5vw;
+                border-radius: 10px;
+                margin: 5vw;
+            }
+            #do{
+                width: 25vw;
+                height: 10vw;
+                font-size: 3.5vw;
+                border-radius: 10px;
+                margin: 5vw;
+            }
+    
+            @keyframes left {
+                0%{
+                    left: -50vw;
+                }
+                100%{
+                    left: 0;
+                }
+            }
+            @keyframes right {
+                0%{
+                    left: 50vw;
+                }
+                100%{
+                    left: 0;
+                }
             }
 
         }}
@@ -285,6 +600,9 @@ border-radius: 0 0px 10px 10px;
 
     @media screen and (min-width:1024px) {
         @media screen and (max-width:1439px) {
+            .education{
+                height: 70vw;
+            }
             .study{
                 height: 55%;
                 width: 34vw;
@@ -315,11 +633,22 @@ border-radius: 0 0px 10px 10px;
             .language{
                 height: 60%;
             }
+            .language iframe{
+                height: 35%;
+            }
             .lang1{
                 width: 90%;
                 font-size: 1.4vw;
             }
             .lang1 h6{
                 font-size: 1.4vw;
+            }
+            #dont{
+                width: 7vw;
+                height: 7vw;
+            }
+            #do{
+                width: 7vw;
+                height: 7vw;
             }
         }}

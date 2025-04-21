@@ -8,18 +8,35 @@
     align-items: center;
     justify-content: space-evenly;
 }
+.resume-btn{
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+    transition-duration: 0.2s;
+
+}
+.resume-btn:hover{
+    background-color: rgb(0, 0, 62); ;
+   a{
+    color: white;
+    transition-duration: 0.2s;
+   }
+}
 .resume-btn a{
     text-decoration: none;
     font-family: 'Inter';
     font-size: 1.2vw;
-    color: black;
+    color:  rgb(0, 0, 62);
+    transition-duration: 0.2s;
+
 }
 a{
     text-decoration: none;
     font-family: 'Inter';
-    font-size: 1.2vw;
-    color: black;
+    font-size: 1.5vw;
+    color:  rgb(0, 0, 62);;
 }
+
 
 @media screen and (min-width: 300px) {
     @media screen and (max-width: 600px) {
@@ -27,12 +44,13 @@ a{
             width: 100%;
             top: 5vw;
             left: 0;
+            height: 5vw;
         }
         .resume-btn a{
             font-size: 3.2vw;
         }
         a{
-            font-size: 3vw;
+            font-size: 3.5vw;
         }
     }}
 
@@ -42,12 +60,13 @@ a{
                 width: 100%;
                 top: 5vw;
                 left: 0;
+                height: 5vw;
             }
             .resume-btn a{
-                font-size: 2.5vw;
+                font-size: 3.2vw;
             }
             a{
-                font-size: 2.5vw;
+                font-size: 3.5vw;
             }
         }}
 

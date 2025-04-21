@@ -1,10 +1,17 @@
 import React from 'react'
 import './skills.css';
-import  { useEffect, useRef } from 'react';
+import  { useEffect, useRef,useState } from 'react';
 
 
 const Skills = () => {
       const pichold = useRef(null);
+      const [isLoaded, setIsLoaded] = useState(true);
+
+      const handleError = () => {
+        console.log('er')
+        setIsLoaded(false); // Hide on error
+      };
+    
     
 
     useEffect(()=>{
@@ -65,6 +72,14 @@ const Skills = () => {
       };
     },[])
 
+    const iframeanim = ()=>{
+      document.getElementById('circuitanim').style.opacity = '1'
+    }
+    const stopanim = ()=>{
+      document.getElementById('circuitanim').style.opacity = '0'
+
+    }
+
   return (
     <>
 
@@ -77,12 +92,15 @@ const Skills = () => {
          <div className="logossep">
         
          </div>
+
+         
          
          <div className="logossep">
          <div className="logobox"><img src="python.jpg" alt="" /></div>
          <div className="logobox"><img src="pandas.jpg" alt="" /></div>
           <div className="logobox"><img src="scikit.png" alt="" /></div>
           <div className="logobox"><img src="vscode.jpg" alt="" /></div>
+          <div className="logobox"><img src="jupyter.png" alt="" /></div>
          </div>
          
          <div className="logossep">
@@ -99,14 +117,24 @@ const Skills = () => {
           <div className="logobox"><img src="verilog.png" alt="" /></div>
           <div className="logobox"><img src="matplotlib.png" alt="" /></div>
           <div className="logobox"><img src="cadence.png" alt="" /></div>
-          <div className="logobox"><img src="dsa.png" alt="" /></div>
+          <div className="logobox"><img src="anaconda.png" alt="" /></div>
           </div>
 
           
 
         </div>
-         
-         <div className="skillimg" ref={pichold}><img src="aibot.png" alt="" /></div>
+        {isLoaded && (
+        <iframe
+        id='circuitanim'
+          src="https://lottie.host/embed/175046f5-1eea-49d8-9c8e-5a2b0a13646c/RzZ3l1O2XB.lottie"
+          title="Lottie animation"
+          onError={handleError}
+        />
+      )}
+        {/* <iframe id='circuitanim' src="https://lottie.host/embed/175046f5-1eea-49d8-9c8e-5a2b0a13646c/RzZ3l1O2XB.lottie"></iframe> */}
+         <div className="skillimg" ref={pichold}>
+          <img onMouseEnter={iframeanim} onMouseLeave={stopanim} id='skillimg_img' src="aibot.png" alt="" />
+          </div>
 
         <div className="skillcont" id='skillcont'>
 

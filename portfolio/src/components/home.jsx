@@ -44,9 +44,9 @@ const Home = () => {
       }
         
          document.getElementById('picholdbox').style.boxShadow = 'none'
-         document.getElementById('name').style.left = '0vw'
+         if(window.innerWidth>= '1023'){document.getElementById('name').style.left = '2vw'
      document.getElementById('desc').style.top = '0'
-     document.getElementById('desc').style.opacity = '100%'
+     document.getElementById('desc').style.opacity = '100%'}
 
     };
   
@@ -56,9 +56,9 @@ const Home = () => {
        pic.style.height = '25vw'
     }
          document.getElementById('picholdbox').style.boxShadow = '0 0 5px 0px #ffffff'
-         if(window.innerWidth>= '800px'){document.getElementById('name').style.left = '30vw'}
+         if(window.innerWidth>= '1023'){document.getElementById('name').style.left = '29vw'
       document.getElementById('desc').style.top = '-12%'
-      document.getElementById('desc').style.opacity = '15%'
+      document.getElementById('desc').style.opacity = '15%'}
       
     };
   
@@ -86,7 +86,7 @@ const Home = () => {
             </div>   
          
             <div className="name" id='name'>
-            Krishna Teja R
+            Krishna Teja Regintala
             </div>
 
            </div>
@@ -112,8 +112,10 @@ const Home = () => {
         </div>
 
         <div className="contacts">
-          <div className="mobile">Mobile: +91 9014856400</div>
-          <div className="mobile">E Mail: krishnatej976@gmail.com</div>
+          <div className="mobile"><a href="tel:+91 9014859400">Call Krishna Teja</a></div>
+          <div className="mobile"><a href=" https://mail.google.com/mail/?view=cm&fs=1&to=mailto:krishnatej976@gmail.com&su=Subject%20Here&body=Message%20goes%20here"  
+  rel="noopener noreferrer">Compose mail to Krishna Teja</a></div>
+
         </div>
     </>
   );
