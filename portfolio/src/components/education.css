@@ -432,16 +432,16 @@ font-weight: 600;
             width: 90%;
             height: 40%;
             .lang1{
-                font-size: 3.2vw;
+                font-size: 3.5vw;
             }
         }
 
         .lang1 h6{
-            font-size: 3.2vw;
+            font-size: 3.5vw;
         }
         .lang1{
             width: 90%;
-            font-size: 0vw;
+            font-size: 3.5vw;
         }
 
         #dont{
