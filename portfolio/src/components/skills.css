@@ -140,7 +140,7 @@
     @media screen and (max-width: 600px) {
         .skills{
             flex-direction: column;
-            height: 130vh;
+            height: 230vw;
         }
         .skillcont{
             width: 90%;
@@ -177,7 +177,7 @@
         }
         .skill{
             width: 100%;
-            font-size: 3.2vw;
+            font-size: 3.5vw;
             
         }
         #skillcont{

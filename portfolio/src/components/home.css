@@ -221,7 +221,7 @@ body::-webkit-scrollbar {
             font-weight: 300;
             top: 0;
             opacity: 1;
-            font-weight: 300;
+            font-weight: 400;
            
         }
 
@@ -310,7 +310,7 @@ body::-webkit-scrollbar {
 
         .endnote {
             font-size: 3vw;
-            margin-top: 15vw;
+            margin-top: 0vw;
         }
 
         .endnote iframe {
@@ -320,6 +320,9 @@ body::-webkit-scrollbar {
         .contacts {
             font-size: 2.5vw;
             margin-top: 10vw;
+        }
+        .contacts a{
+            font-size: 3.2vw;
         }
     
     }}

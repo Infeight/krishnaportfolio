@@ -19,6 +19,7 @@ justify-content: space-evenly;
     justify-content: space-evenly;
 }
 
+
 .works:hover{
       #workdone1{
         transform-origin: top left; 
@@ -256,7 +257,7 @@ justify-content: space-evenly;
     @media screen and (max-width: 600px) {
         .works{
             flex-direction: column-reverse;
-            height: 105vh;
+            height: 275vw
         }
         .workdone{
             width: 90%;
@@ -273,6 +274,7 @@ justify-content: space-evenly;
         .workshead{
             text-align: center;
             font-size: 8vw;
+            font-weight: 500;
         }
 
         .workscont{

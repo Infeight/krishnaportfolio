@@ -9,39 +9,60 @@
 .study{
     position: relative;
     width: 32vw;
-    height: 32vw;
+    height: 40vw;
     border-radius: 10px;
     background-color: transparent;
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: center;
+   justify-content: space-evenly;
    border: 0;
    margin: 0;
    position: relative;
-   animation-name: appearlow;
-   animation-direction: linear;
-   animation-timeline: view();
-   animation-range: entry 0 cover 50%;
+
   transition-duration: 0.5s;
  
 }
+.study iframe{
+    border: 0;
+    position: absolute;
+    width: 135%;
+    height: 108%;
+    border-radius: 10px;
+    z-index: -1;
+    animation-name: fading;
+    animation-direction: linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+
+}
+
+@keyframes fading {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 
 @keyframes appearlow {
     0%{
         left: -50vw;
-        opacity: 0;
+      
     }
     100%{
         left: 0;
-        opacity: 1;
+   
     }
 }
 
 
 .study1{
     width: 100%;
-    height: 34%;
+    height: 30%;
     box-sizing: border-box;
     padding: 10px;
     transition-duration: 0.3s;
@@ -49,6 +70,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+       
 }
 
 
@@ -70,9 +92,14 @@ transition-duration: 0.3s;
 }
 
 #study1{
-background-color: transparent;
+    position: relative;
+    background-color: #ffffff;
     color:  #002e49;
     border-radius: 10px 10px 0 0px;
+    animation-name: appearlow;
+    animation-direction: linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
 }
 
 #study1:hover{
@@ -87,8 +114,13 @@ background-color: transparent;
 }
 
 #study2{
-    background-color: transparent;
+    position: relative;
+    background-color: #ffffff;
     color:  #002e49;
+    animation-name: appearlow;
+    animation-direction: linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
    
 }
 
@@ -104,9 +136,14 @@ background-color: transparent;
 }
 
 #study3{
-    background-color: transparent;
+    position: relative;
+    background-color: #ffffff;
     color:  #002e49;
 border-radius: 0 0px 10px 10px;
+animation-name: appearlow;
+animation-direction: linear;
+animation-timeline: view();
+animation-range: entry 0 cover 30%;
 
 }
 
@@ -165,6 +202,7 @@ transform-origin: top center;
 }
 
 #dont{
+    display: none;
     width: 5vw;
     height: 5vw;
     border-radius: 50vw;
@@ -195,14 +233,7 @@ transition-duration: 0.5s;
     box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
 }
 
-@keyframes fading {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+
 
 @keyframes dangerPulse {
     0% {
@@ -284,16 +315,23 @@ font-weight: 600;
     @media screen and (max-width: 600px) {
         .education{
             flex-direction: column;
-            height: 150vh;
+            height: 350vw;
             margin-top: 15vw;
+            /* overflow-x: hidden; */
         }
         .study{
             width: 90%;
             height: 70%;
             animation: none;
+            margin-bottom: 5vw;
+        }
+        .study iframe{
+            width: 250vw;
+            height: 235vw;
+            display: none;
         }
         .study1{
-            margin-bottom: 5vw;
+            margin-bottom: 0vw;
             align-items: normal;
             animation-name: appearleft;
             animation-direction: linear;
@@ -339,25 +377,27 @@ font-weight: 600;
         #study1:hover{
             p{
                 opacity: 1;
-                font-size: 3.2vw;
+                font-size: 3.5vw;
             }
-            height: 80%;
+            height: 30%;
         }
 
         #study2:hover{
             p{
                 opacity: 1;
-                font-size: 3.2vw;
+                font-size: 3.5vw;
             }
-            height: 80%;
+            height: 30%;
+
         }
 
         #study3:hover{
             p{
                 opacity: 1;
-                font-size: 3.2vw;
+                font-size: 3.5vw;
             }
-            height: 80%;
+            height: 30%;
+
         }
 
 
@@ -378,7 +418,7 @@ font-weight: 600;
 
         .language{
             width: 90%;
-            height: 40%;
+            height: 30%;
             box-sizing: border-box;
             padding: 10px;
         }
@@ -387,7 +427,7 @@ font-weight: 600;
         }
         .language:hover{
             iframe{
-                height: 60%;
+                height: 40%;
             }
             width: 90%;
             height: 40%;
@@ -401,7 +441,7 @@ font-weight: 600;
         }
         .lang1{
             width: 90%;
-            font-size: 3.2vw;
+            font-size: 0vw;
         }
 
         #dont{
@@ -443,16 +483,22 @@ font-weight: 600;
 
             .education{
                 flex-direction: column;
-                height: 170vh;
+                height: 350vw;
                 margin-top: 15vw;
             }
             .study{
                 width: 90%;
-                height: 70%;
+                height: 50%;
                 animation: none;
+                margin-bottom: 5vw;
+            }
+            .study iframe{
+                width: 185vw;
+                height: 185vw;
             }
             .study1{
-                margin-bottom: 5vw;
+                height: 32%;
+                margin-bottom: 0vw;
                 align-items: normal;
                 animation-name: appearleft;
                 animation-direction: linear;
@@ -498,25 +544,25 @@ font-weight: 600;
             #study1:hover{
                 p{
                     opacity: 1;
-                    font-size: 3.2vw;
+                    font-size: 3vw;
                 }
-                height: 80%;
+                height: 33%;
             }
     
             #study2:hover{
                 p{
                     opacity: 1;
-                    font-size: 3.2vw;
+                    font-size: 3vw;
                 }
-                height: 80%;
+                height: 33%;
             }
     
             #study3:hover{
                 p{
                     opacity: 1;
-                    font-size: 3.2vw;
+                    font-size: 3vw;
                 }
-                height: 80%;
+                height: 33%;
             }
     
     
@@ -537,7 +583,7 @@ font-weight: 600;
     
             .language{
                 width: 90%;
-                height: 40%;
+                height: 30%;
                 box-sizing: border-box;
                 padding: 10px;
             }
@@ -594,7 +640,6 @@ font-weight: 600;
                     left: 0;
                 }
             }
-
         }}
 
 
@@ -604,8 +649,13 @@ font-weight: 600;
                 height: 70vw;
             }
             .study{
-                height: 55%;
-                width: 34vw;
+                height: 70%;
+                width: 40vw;
+            }
+            .study iframe{
+                width: 125%;
+                height: 105%;
+
             }
             #study1:hover{
                 p{
@@ -631,14 +681,24 @@ font-weight: 600;
                 height: 80%;
             }
             .language{
-                height: 60%;
+                height: 40%;
             }
             .language iframe{
                 height: 35%;
             }
+            .language:hover{
+                iframe{
+                    height: 35%;
+                }
+                height: 60%;
+                .lang1{
+                    font-size: 1.4vw;
+                }
+            }
+    
             .lang1{
                 width: 90%;
-                font-size: 1.4vw;
+                font-size: 0vw;
             }
             .lang1 h6{
                 font-size: 1.4vw;

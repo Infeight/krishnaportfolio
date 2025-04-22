@@ -37,6 +37,8 @@ const Education = () => {
     <>
       <div className="education">
         <div className="study">
+        <iframe src="https://lottie.host/embed/0b90ea99-77fd-4f6a-98e7-4f22517ef021/TzKJgvvMUU.lottie"></iframe>
+
             <div className="study1" id='study1'>
 
              <h6>Bachelor of Technology (B.Tech) in Electronics and Communication Engineering</h6>

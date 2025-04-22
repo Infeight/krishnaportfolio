@@ -45,10 +45,10 @@
 @media screen and (min-width: 300px) {
     @media screen and (max-width: 600px) {
         .works{
-            height: 115vh;
+            height: 275vw;
         }
         .works1{
-            height: 145vh;
+            height: 330vw;
             flex-direction: column-reverse;
         }
          
