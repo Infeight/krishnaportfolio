@@ -20,7 +20,7 @@
 .certs{
     background-color: transparent;
     width: 100vw;
-    height: 100vh;
+    height: 70vw;
     max-width: 1490px;
     margin: auto;
     display: grid;
@@ -32,7 +32,7 @@
 }
 .certificate{
     width: 80%;
-    height: 85%;
+    height: 75%;
     margin: auto;
     box-shadow: 0 0 5px 0px #ffffff;  
   box-sizing: border-box;
@@ -127,7 +127,7 @@
 }
 
 .certificate img{
-    width: 95%;
+    width: 100%;
     margin-bottom: 1vw;
     transition-duration: 0.5s;
 }
