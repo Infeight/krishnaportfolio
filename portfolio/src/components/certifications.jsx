@@ -81,7 +81,17 @@ const Certifications = () => {
           </div>
   
           <div className='certificate'>
-              <iframe src="https://lottie.host/embed/ca0dbbb8-4d9f-4add-be06-e75be07927ba/UfxEBCJ4Vy.lottie" frameborder="0"></iframe>
+              <img src="cert6.png" alt="" />
+              <div className="details">
+              <h2>IOT SKILL DEVELOPMENT BOOTCAMP</h2>
+            
+              <div className="cred">
+              <p>Credential ID:</p>
+                <div className="credid"></div>    
+              <a href="https://drive.google.com/file/d/1TmMcgcgX-c1L888eFRX_DR4f2_sCk3MQ/view">Show credential <FaExternalLinkAlt />              </a>
+              </div>
+
+              </div>
           </div>
           </div>
        </div>
